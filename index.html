@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>To Do list</title>
+</head>
+
+<body>
+    <h1>My To Do list</h1>
+    <form>
+        <label>Enter todo : </label>
+        <input type='text' id='todoInput' />
+        <a class='button' onclick=createList()>Add</a>
+    </form>
+
+
+    <ul id="list">
+        <li><a onclick=removeItem(0)>Gym</li></a>
+        <li><a onclick=removeItem(1)>Homework</li></a>
+        <li><a onclick=removeItem(2)>Eat</li></a>
+        <li><a onclick=removeItem(3)>go to meeting</li></a>
+        <li><a onclick=removeItem(4)>Sleep</li></a>
+    </ul>
+
+
+    <script src='app.js'></script>
+
+</body>
+
+</html>
